@@ -11,12 +11,15 @@
 	<script>
 		/* 
 		 I'm going to describe my apartment using a string, 
-		 a number, a bollean, an array and an object.
+		 a number, a boolean, an array and an object. After I'm done,
+		 the computer will know that I live in a place called
+		 "Harry's Apartment," that it is an apartment, what kinds of rooms are inside, what kinds
+		 of furniture I have, and, of course, my address.
 		 */
 		
 		/*
 		 * First, I'll make a string to tell the computer that the
-		 * name of the place is "Harry's Apartment"
+		 * name of the place is "Harry's Apartment".
 		 * Then, I'll do a console.log to see if the computer is
 		 * aware that there is a place called "Harry's Apartment"
 		 */
@@ -50,8 +53,8 @@
 		 * If I have more than one type of furniture, I will embed 
 		 * an object to tell the computer how many of that type of 
 		 * furniture I have.
-		 * Then, I'll do a console.log to list the furniture. I'll do another 
-		 * console.log to list the fourth piece of furniture.
+		 * Then, I'll do a console.log to list the furniture. I'll also 
+		 * do another console.log to only list the fourth piece of furniture.
 		 */
 		var furniture = ["bed","couch","desk","coffee table","TV","office chair",
 			"reclining char",{"folding chair":2},{"kitchen chair":2}];
@@ -67,6 +70,22 @@
 		var address = {"Number":468,"Street":"W 153rd St.","Apt":"1B"};
 		console.log(address);
 		
+		/*
+		 * Sixth, I've remembered I have a third folding chair! I am
+		 * going to alter the folding chair object in the furniture array
+		 * to update the computer on my third folding chair.
+		 * Then, I'll console log just the folding chairs to make sure it knows
+		 * how many folding chairs I have now.
+		 * NOTE: I tried doing:		
+			furniture = [{"folding chair":3}];
+			console.log(furniture[7]);
+		 * but that seems to have deleted all the other pieces of furniture in
+		 * my inventory. I ended up re-copying all of the pieces of furniture.
+		 */
+		
+		furniture = ["bed","couch","desk","coffee table","TV","office chair",
+			"reclining char",{"folding chair":3},{"kitchen chair":2}];
+		console.log(furniture[7]);
 	</script>
 
 </html>
