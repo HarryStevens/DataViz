@@ -9,7 +9,63 @@
 		<h1>This assignment is all about javascript.</h1>
 	</body>
 	<script>
+		/* 
+		 I'm going to describe my apartment using a string, 
+		 a number, a bollean, an array and an object.
+		 */
 		
+		/*
+		 * First, I'll make a string to tell the computer that the
+		 * name of the place is "Harry's Apartment"
+		 * Then, I'll do a console.log to see if the computer is
+		 * aware that there is a place called "Harry's Apartment"
+		 */
+		var placeName = "Harry's Apartment";
+		console.log(placeName);
+		
+		/*
+		 * Second, I want the computer to know that it's an apartment,
+		 * so I'm going to make a boolean for that.
+		 * Then, I'll do a console.log to make sure it knows that 
+		 * we're talking about an apartment here.
+		 */
+		var apartment = true;
+		console.log(apartment);
+		
+		/*
+		 * Third, I will add a few numbers so it knows how many of
+		 * each room my apartment has.
+		 * Then, I'll console.log each room type to make sure the
+		 * computer knows how many of each room I have.
+		 */
+		var numBedrooms = 1;
+		var numLivingRooms = 1;
+		var numBathrooms = 1;
+		var numKitchens = 1;
+		var numClosets = 3;
+		console.log(numBedrooms,numLivingRooms,numBathrooms,numKitchens,numClosets);
+		
+		/*
+		 * Fourth, I will make an array to inventory my furniture. 
+		 * If I have more than one type of furniture, I will embed 
+		 * an object to tell the computer how many of that type of 
+		 * furniture I have.
+		 * Then, I'll do a console.log to list the furniture. I'll do another 
+		 * console.log to list the fourth piece of furniture.
+		 */
+		var furniture = ["bed","couch","desk","coffee table","TV","office chair",
+			"reclining char",{"folding chair":2},{"kitchen chair":2}];
+		console.log(furniture);
+		console.log(furniture[3]);
+		
+		/*
+		 * Fifth, I'll make an object to tell the computer my address, 
+		 * including the number, street, and apartment number.
+		 * Then, I'll do a console.log to make sure the computer knows
+		 * my address.
+		 */
+		var address = {"Number":468,"Street":"W 153rd St.","Apt":"1B"};
+		console.log(address);
 		
 	</script>
 
